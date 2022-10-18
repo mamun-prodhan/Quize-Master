@@ -10,7 +10,7 @@ const Topic = ({ topic }) => {
                 <div className="card-body  bg-success text-dark bg-opacity-50">
                     <h5 className="card-title fw-bold">{name}</h5>
                     <p className="card-text">Total Question: {total}</p>
-                    <button type="button" class="btn btn-outline-primary fw-bold">Start Practice</button>
+                    <button type="button" className="btn btn-outline-primary fw-bold">Start Practice</button>
                 </div>
             </div>
         </div>

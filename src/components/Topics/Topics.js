@@ -5,6 +5,7 @@ import './Topics.css'
 
 const Topics = () => {
     const allTopics = useLoaderData();
+    const topics = allTopics.data;
     return (
         <div className='alltopics-container'>
 
@@ -14,13 +15,12 @@ const Topics = () => {
 
             <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
             {
-                allTopics.map(topic => <Topic
+                topics.map(topic => <Topic
                 key={topic.id}
                 topic={topic}
                 ></Topic>)
             }
             </div>
-            
         </div>
     );
 };
