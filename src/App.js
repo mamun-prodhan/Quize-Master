@@ -4,7 +4,7 @@ import Main from './layout/Main';
 import Topics from './components/Topics/Topics';
 import Statistics from './components/Statistics/Statistics';
 import Blog from './components/Blog/Blog';
-import Quizzes from './components/Quizzes/Quizzes';
+import TopicDetail from './components/TopicDetail/TopicDetail';
 
 
 function App() {
@@ -29,12 +29,19 @@ function App() {
           path:'/blog',
           element: <Blog></Blog>
         },
+        // {
+        //   path: '/quizzes',
+        //   loader: async () =>{
+        //     return fetch('https://openapi.programming-hero.com/api/quiz/1')
+        //   } ,
+        //   element: <Quizzes></Quizzes>
+        // }
         {
-          path: '/quizzes',
-          loader: async () =>{
-            return fetch('https://openapi.programming-hero.com/api/quiz/1')
-          } ,
-          element: <Quizzes></Quizzes>
+          path:'/quiz/:quizId',
+          loader: async({params}) =>{
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`)
+          },
+          element: <TopicDetail></TopicDetail>
         }
       ]
     }

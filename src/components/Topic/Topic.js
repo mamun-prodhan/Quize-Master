@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Topic.css'
 
 const Topic = ({ topic }) => {
@@ -10,7 +11,7 @@ const Topic = ({ topic }) => {
                 <div className="card-body  bg-success text-dark bg-opacity-50">
                     <h5 className="card-title fw-bold">{name}</h5>
                     <p className="card-text">Total Question: {total}</p>
-                    <button type="button" className="btn btn-outline-primary fw-bold">Start Practice</button>
+                    <Link to={`/quiz/${id}`}> <button type="button" className="btn btn-outline-primary fw-bold">Start Practice</button> </Link>
                 </div>
             </div>
         </div>
