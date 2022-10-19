@@ -10,7 +10,7 @@ const Topics = () => {
     return (
         <div className='alltopics-container'>
 
-            <div className='banner-container'>
+            <div className='banner-container mb-3'>
                 <div>
                     <img className='img-fluid' src={image} alt="" />
                 </div>
