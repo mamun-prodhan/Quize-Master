@@ -7,10 +7,10 @@ const TopicDetail = () => {
 
     const topicName = singleTopic.data.name;
     const quizzes = singleTopic.data.questions;
-    console.log(quizzes);
+    // console.log(quizzes);
     return (
         <div>
-            <h2>Quiz of {topicName}</h2>
+            <h2 className='m-4 text-success'>Quiz of {topicName}</h2>
             {
                 quizzes.map((data, index) => <Quiz
                     key={data.id}
