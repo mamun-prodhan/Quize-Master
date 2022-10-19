@@ -13,8 +13,8 @@ const Statistics = () => {
     console.log(data);
     return (
         <div>
-            <h2>This is Statistics</h2>
-            <LineChart width={500} height={400} data={data}>
+            <h2 className='p-3'>This is Statistics</h2>
+            <LineChart width={400} height={300} data={data}>
                 <Line type="monotone" dataKey="total" stroke="#82ca9d" />
                 <XAxis datakey="name" />
                 <YAxis />
