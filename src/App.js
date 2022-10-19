@@ -5,6 +5,7 @@ import Topics from './components/Topics/Topics';
 import Statistics from './components/Statistics/Statistics';
 import Blog from './components/Blog/Blog';
 import TopicDetail from './components/TopicDetail/TopicDetail';
+import NotFound from './components/NotFound/NotFound';
 
 
 function App() {
@@ -37,6 +38,10 @@ function App() {
           element: <TopicDetail></TopicDetail>
         }
       ]
+    },
+    {
+      path: '*',
+      element: <NotFound></NotFound>
     }
   ])
 
