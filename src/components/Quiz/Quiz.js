@@ -12,14 +12,9 @@ const Quiz = ({ data, index }) => {
     const options = data.options;
     const quizIndex = index;
     const correctAnswer = data.correctAnswer;
-    console.log(correctAnswer);
-    // console.log(options);
-    // const [quizvalue, setQuizvalue] = useState();
-
-    // console.log(quizvalue);
+    
 
     const quizHandler = (event) => {
-        console.log(event);
         if (event === correctAnswer) {
             toast.success('WoW !!! Right Answer', {
                 position: "top-center",

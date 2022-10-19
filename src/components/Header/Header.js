@@ -8,7 +8,7 @@ const Header = () => {
                 <h3 className='fw-bold'>Quiz Master</h3>
             </div>
             <div>
-                <Link to='/' className='text-decoration-none me-3 fw-bold btn btn-outline-primary'>Topics</Link>
+                <Link to='/' className='text-decoration-none me-3 fw-bold btn btn-outline-primary'>Home</Link>
                 <Link to='/statistics' className='text-decoration-none me-3 fw-bold btn btn-outline-primary'>Statistics</Link>
                 <Link to='/blog'  className='text-decoration-none me-3 fw-bold btn btn-outline-primary'>Blog</Link>
             </div>

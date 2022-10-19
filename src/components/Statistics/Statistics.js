@@ -6,11 +6,8 @@ import { useLoaderData } from 'react-router-dom';
 const Statistics = () => {
     const questions = useLoaderData();
 
-
     const data = questions.data;
 
-
-    console.log(data);
     return (
         <div>
             <h2 className='p-3'>This is Statistics</h2>
