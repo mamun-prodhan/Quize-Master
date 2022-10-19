@@ -2,12 +2,15 @@
 
 Live Website Link: https://zingy-druid-7dc8bf.netlify.app
 
-Project Description: 
+<strong>Project Description:</strong> 
 
----This is a React Router Project <br>
----Here we use Dynamic Route <br>
----We use Rechart to create chart <br>
----This is a Quiz Website <br>
----Here we use React Tostify to show info <br>
----We have a Blog section, Here we answered some of React Question
+<ul>
+    <li>This is a React Router Project</li>
+    <li>Here we use Dynamic Route</li>
+    <li>We use Rechart to create chart</li>
+    <li>This is a Quiz Website</li>
+    <li>Here we use React Tostify to show info</li>
+    <li>We have a Blog section, Here we answered some of React Question</li>
+</ul>
+
 
