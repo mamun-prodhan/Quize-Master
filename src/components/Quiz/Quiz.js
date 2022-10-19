@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import Options from '../Options/Options';
 
+// toast import
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Quiz = ({data, index}) => {
     // console.log(data);
     // console.log(index);
@@ -9,17 +13,17 @@ const Quiz = ({data, index}) => {
     const correctAnswer = data.correctAnswer;
     console.log(correctAnswer);
     // console.log(options);
-    const [quizvalue, setQuizvalue] = useState();
+    // const [quizvalue, setQuizvalue] = useState();
 
     // console.log(quizvalue);
 
     const quizHandler = (event) =>{
         console.log(event);
         if(event === correctAnswer){
-            alert('correct');
+            toast("Wow Correct Answer!");
         }
         else{
-            alert('wrong');
+            toast("HUH!!! wrong Answer");
         }
     }
 
@@ -38,6 +42,7 @@ const Quiz = ({data, index}) => {
                 quizHandler={quizHandler}
                 ></Options>)
             }
+            <ToastContainer />
         </div>
     );
 };
