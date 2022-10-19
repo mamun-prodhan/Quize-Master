@@ -1,4 +1,4 @@
-Project Name: Quiz Master Website
+<h2>Project Name: Quiz Master Website</h2>
 
 Live Website Link: https://zingy-druid-7dc8bf.netlify.app
 
