@@ -20,10 +20,28 @@ const Quiz = ({data, index}) => {
     const quizHandler = (event) =>{
         console.log(event);
         if(event === correctAnswer){
-            toast("Wow Correct Answer!");
+            toast.success('WoW !!! Right Answer', {
+                position: "top-center",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                });
         }
         else{
-            toast("HUH!!! wrong Answer");
+            toast.error('Wrong Answer !!!!', {
+                position: "top-center",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                });
         }
     }
 
